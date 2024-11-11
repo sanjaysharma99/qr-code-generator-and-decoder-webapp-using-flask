@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+#main {
+    background-color: white;
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 20px 2px cyan;
+    border-radius: 20px;
+}
+#main h2 {
+    color: blueviolet;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+#main p {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+#textbox {
+    width: 80%;
+    height: 80px;
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #ff6347;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover {
+    background-color: #ff4500;
+    box-shadow: 0px 4px 10px rgba(255, 69, 0, 0.5);
+    transform: scale(1.05);
+}
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #main {
+        width: 70%;
+    }
+    #main h2 {
+        font-size: 1.5em;
+    }
+    #textbox {
+        width: 90%;
+        font-size: 0.9em;
+    }
+    .btn {
+        padding: 8px 18px;
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 480px) {
+    #main {
+        width: 90%;
+        padding: 15px;
+    }
+    #main h2 {
+        font-size: 1.3em;
+    }
+    #textbox {
+        width: 100%;
+        font-size: 0.85em;
+    }
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.85em;
+    }
+}

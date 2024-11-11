@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <div id="main">
+        <div id="generateBox" class="toolsBox">
+            <a href="/generator"><button>Generate QR</button></a>
+        </div>
+        <div id="decodeBox" class="toolsBox">
+            <a href="/decoder"><button>Decode QR</button></a>
+        </div>
+    </div>
+</body>
+</html>

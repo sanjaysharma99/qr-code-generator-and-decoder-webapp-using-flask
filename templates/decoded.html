@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Decoder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/decoded.css') }}">
+</head>
+<body>
+    <div id="main">
+        <h2>Decoded QR Code Text</h2>
+        <textarea id="textbox" name="info" readonly placeholder="Decoded text will appear here">{{ data }}</textarea><br/>
+        <a href="/" class="btn">Home</a>
+    </div>
+</body>
+</html>

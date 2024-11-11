@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Decoder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/decoder.css') }}">
+</head>
+<body>
+    <div id="main">
+        <h2>QR Code Decoder</h2>
+        <p>Select a QR code image to decode.</p>
+        <form action="/decode" method="post" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="qrImage" accept="image/*" required><br/>
+            <input type="submit" value="Decode QR Code" id="decodeButton">
+        </form>
+    </div>
+</body>
+</html>
